@@ -6,7 +6,7 @@
 - Execute `npm install` command on the same path as your local project
 - Create a new `.env` file in your root directory of project and add the following environment variable
     - `PORT=3000`
-- Inside the `source/config` file make a new file `config.json`and add the following code:
+- Inside the `source/config` file make a new file `config.json` and add the following code:
 ```
 {
   "development": {
