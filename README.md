@@ -22,6 +22,10 @@
 ```
 npx sequelize db:create
 ```
+- After this execute the following command:
+```
+npx sequelize db:migrate
+```
 
 ## DB Design
 - Airplane Table
