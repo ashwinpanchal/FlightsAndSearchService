@@ -22,3 +22,13 @@
 ```
 npx sequelize db:create
 ```
+
+## DB Design
+- Airplane Table
+- Flight Table
+- Airport Table
+- City
+
+- A flight belong to one airplane but one airplane can belong to many flights
+- A city can have many airport but every airport belong to one city
+- A flight can belong to only one airport but an airport can have many flights
