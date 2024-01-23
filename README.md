@@ -36,3 +36,18 @@ npx sequelize db:migrate
 - A flight belong to one airplane but one airplane can belong to many flights
 - A city can have many airport but every airport belong to one city
 - A flight can belong to only one airport but an airport can have many flights
+
+## Table
+
+### City
+- id
+- name
+- created_at 
+- updated_at
+
+### Airport 
+- id 
+- name
+- city_id
+- address
+
