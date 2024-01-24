@@ -15,6 +15,16 @@ class CityService {
     }
   }
 
+  async createBulkCities(obj) {
+    try {
+      const addedCities = await this.cityRepository.createBulk(obj);
+      return addedCities;
+    } catch (error) {
+      console.log("Something went wrong at service level");
+      throw { error };
+    }
+  }
+
   async deleteCity(cityId) {
     try {
       await this.cityRepository.deleteCity(cityId);

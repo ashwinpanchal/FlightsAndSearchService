@@ -50,4 +50,7 @@ npx sequelize db:migrate
 - name
 - city_id
 - address
+ ```
+ npx sequelize model:generate --name Airport --attributes name:string,address:string,city_id:integer
+ ```
 
