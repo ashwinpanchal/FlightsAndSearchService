@@ -53,4 +53,8 @@ npx sequelize db:migrate
  ```
  npx sequelize model:generate --name Airport --attributes name:string,address:string,city_id:integer
  ```
+ The following command will add a seeder file:
+ ```
+ npx sequelize seed:generate --name add_airplanes
+ ```
 
