@@ -4,6 +4,7 @@ const {
   CityController,
   FlightController,
 } = require("../../controllers/index");
+const { FlightMiddleware } = require("../../middlewares/index");
 
 const router = express.Router();
 
@@ -20,7 +21,11 @@ router.get("/airport/:id", AirportController.get);
 router.get("/airport", AirportController.getAll);
 router.patch("/airport/:id", AirportController.update);
 
-router.post("/flights", FlightController.create);
+router.post(
+  "/flights",
+  FlightMiddleware.createChecker,
+  FlightController.create
+);
 router.get("/allflights", FlightController.getAll);
 router.get("/flights", FlightController.get);
 
